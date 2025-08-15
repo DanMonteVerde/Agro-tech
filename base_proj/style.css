@@ -28,17 +28,23 @@ nav ul{
     display: flex;
     gap: 10px;
     font-size: 20px;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
 #sobre h2{
     padding: 20px;
 }
     
 .sobre-conteudo{
     width: 550px;
-    height: 200px;
+    height: 300px;
     padding: 20px;
     display: inline-block;
+    text-align: justify;
 }
 .sobre-veja{
     width: 550px;
@@ -51,6 +57,7 @@ nav ul{
 #historias{
     background-color: dodgerblue;
 }
+
 .topo-historias{
     text-align: center
 }
@@ -58,13 +65,54 @@ nav ul{
 .conteiner{
     text-align: center; 
     padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease,trasform 0.3s ease;
+}
+
+.conteiner :hover{
+    background-color: #d6d4d4;
+    transform: scale(1.1);
 }
 
 .caixa-historias{
     display: inline-block;
-    width: 350px;
+    width: 450px;
     height: 400px;
     margin: 10px;
     background-color: #f0f0f0;
     border: 1px solid #333;
+}
+
+#regioes{
+    background-color: #efeded;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}   
+
+.caixa-regioes{
+    display: inline-block;
+    width: 340px;
+    height: 200px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+#regioes :hover   {
+    background-color: #d6d4d4;
+    transform: scale(1.1);
+    margin: auto;
+}
+.texto-historias{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8em;
 }
