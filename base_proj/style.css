@@ -109,3 +109,9 @@ nav ul li a{
     background-color: #d6d4d4;
     transform: scale(1.1);
 }
+.texto-historias{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    font-size: ;
+}
