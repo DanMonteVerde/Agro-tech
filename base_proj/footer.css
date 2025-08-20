@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+    color: #0a0a0a;
+}
+
+#sec-footer{
+    background-color: #22682b;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    height: 350px;
+}
+
+.conteiner-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+footer{
+    background-color: #1f5226;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+
+.rodape-text{
+    text-align: center;
+    color: #fff;
+}
+
+.rodape-links{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
