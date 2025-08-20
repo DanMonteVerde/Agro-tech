@@ -104,21 +104,20 @@ header button{
     text-align: center;
     padding: 30px;
     margin: 30px;
-    transition: background-color 0.3s ease,transform 0.3s ease;
+    transition: background-color 0.3s ease
 }
 
 .caixa-historias :hover   {
-    background-color: #d6d4d4;
-    transform: scale(1.1);
-    margin: auto;
+    background-color: #edeaea;
+    cursor: pointer;
 }
 
 #regioes{
-    background-color: #efeded;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease,transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }   
 
 .caixa-regioes{
@@ -136,9 +135,8 @@ header button{
 }
 
 #regioes :hover   {
-    background-color: #d6d4d4;
-    transform: scale(1.1);
-    margin: auto;
+    background-color: #efeded;
+    cursor: pointer;
 }
 .texto-historias{
     text-align: justify;
