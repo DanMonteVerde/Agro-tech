@@ -67,6 +67,32 @@ header button{
     width: 600px;
     border-radius: 12px 12px 12px 12px;
 }
+
+#sobre button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-comecar{
+    background-color: #eceaea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-saiba-mais{
+    background-color: #37903f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
     
 .sobre-texto{
     width: 50%;
