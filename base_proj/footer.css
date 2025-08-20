@@ -18,8 +18,8 @@ body{
 }
 
 .conteiner-footer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
     align-items: center;
 }
 
@@ -31,6 +31,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 60px;
+    text-decoration: none;
 }
 
 
@@ -44,4 +45,28 @@ footer{
     color: #fff;
     text-decoration: none;
     list-style: none;
+}
+
+.rodape-links ul{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.rodape-links li{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.rodape-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
 }
