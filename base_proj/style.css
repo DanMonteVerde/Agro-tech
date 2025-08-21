@@ -11,7 +11,7 @@ body{
 header{
     display: flex; 
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     color: #fff;
     border: #333 1px solid;
@@ -24,6 +24,7 @@ header h1{
     margin-left: 20px;  
     margin-right: 0;  
     color: #267839;
+    font-size: 30px;
 }
 .logo{
     display: flex;
@@ -33,8 +34,8 @@ header h1{
 
 
 header img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 header button{
@@ -44,6 +45,8 @@ header button{
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    /* height: 20px; */
+    display: flex;
 }
 
 .link-header:link, .link-header:visited{
@@ -60,9 +63,7 @@ header button{
     background-image: linear-gradient(#235741, #1C709C);
 }
 
-.sobre-texto{
 
-}
 
 #sobre p{
     margin-top: 30px;
@@ -123,7 +124,7 @@ header button{
 }
 
 .button-comecar a{
-    color: #316D4C;
+    color: #3a6e33;
 }
     
 .sobre-texto{
@@ -259,12 +260,23 @@ header button{
 }
 
 #recursos{
-    background-color: #28913f;
+    background-color: #2d6a47;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     transition: background-color 0.3s ease,transform 0.3s ease;
     height: 300px;
+    text-align: center;
+    color: white;
+}
+
+#recursos h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#recursos img{
+    color: rgb(155,197,164);
 }
 
 #relatos{
@@ -277,28 +289,10 @@ header button{
 }
 
 .topo-relatos{
-    text-align: center
-}
-
-.caixa-recursos{
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #333;
-    box-shadow: 0px 0px 10px #333;
-    border-radius: 20px;
     text-align: center;
-    padding: 30px;
-    margin: 30px;
 }
 
-.caixa-recursos :hover   {
-    background-color: #d6d4d4;
-    transform: scale(1.1);
-    margin: auto;
-}
+
 
 .caixa-relatos{
     display: inline-block;
@@ -318,4 +312,65 @@ header button{
     background-color: #d6d4d4;
     transform: scale(1.1);
     margin: auto;
+}
+
+#caixa-final {
+    background-color: #a8d8ff;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 60px;
+}
+
+#caixa-final button{
+
+    border-radius: 10px;
+
+    cursor: pointer;
+    
+}
+
+.button-comecar-gratis{
+    background-color: #2d6a47;
+    padding:8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.link-button-comecar-gratis:link, .link-button-comecar:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.button-falar-com-especialista{
+    background-color: white;
+    border: 1px solid #3a6a47;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    color: #3a6a47;
+}
+
+.link-button-falar-com-especialista:link,.link-button-falar-com-especialista:visited{
+    text-decoration: none;
+    color: #3a6a47;
+}
+
+
+.texto-caixa-final{
+    text-align: center;
+}
+
+.texto-caixa-final h2 {
+    margin-bottom: 20px;
+}
+
+.texto-caixa-final p {
+    margin-bottom: 20px;
 }
