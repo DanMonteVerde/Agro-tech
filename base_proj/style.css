@@ -12,7 +12,7 @@ header{
     display: flex; 
     justify-content: space-between;
     padding: 20px;
-    background-color: #e5e5e5;
+    background-color: white;
     color: #fff;
     border: #333 1px solid;
     box-shadow: 0px 0px 10px #333;
@@ -23,75 +23,107 @@ header{
 header h1{
     margin-left: 20px;  
     margin-right: 0;  
+    color: #267839;
 }
 .logo{
     display: flex;
     align-items: center;
 }
 
+
+
 header img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 header button{
-    background-color: #dfdede;
-    color: #fff;
+    background-color: #267839;
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
 }
 
+.link-header:link, .link-header:visited{
+    text-decoration: none;
+    color: white;
+}
+
+
 #sobre{
     display: flex;
-    padding: 100px;
+    padding: 70px;
     justify-content: space-evenly;
     align-items: center;
+    background-image: linear-gradient(#235741, #1C709C);
+}
+
+.sobre-texto{
+
 }
 
 #sobre p{
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+    
 }
 
 #titulo-sobre-1{
-    font-size: 90px;
+    font-size: 60px;
+    color: white;
 }
 
 #titulo-sobre-2{
-    font-size: 90px;
+    font-size: 55px;
+    color: #7EAF96;
 }
 
 #sobre img{
-    width: 600px;
+    width: 450px;
     border-radius: 12px 12px 12px 12px;
 }
 
 #sobre button{
-    border: none;
-    border-radius: 5px;
+
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 .button-comecar{
-    background-color: #eceaea;
-    color: #fff;
+    background-color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     text-decoration: none;
+    margin-right: 20px;
+}
+
+.link-button-comecar:link, .link-button-comecar:visited{
+    text-decoration: none;
+    color: #28913f;
 }
 
 .button-saiba-mais{
-    background-color: #37903f;
-    color: #fff;
-    border: none;
+    background-color: transparent;
+    border: 1px solid white;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.link-button-saiba:link, .link-button-saiba:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.button-comecar a{
+    color: #316D4C;
 }
     
 .sobre-texto{
@@ -143,11 +175,26 @@ header button{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transition: background-color 0.3s ease;
-}   
+}
+
+.texto-regioes{
+    text-align: center;
+    padding: 80px;
+}
+
+.texto-regioes h2 {
+    margin-bottom: 20px;
+}
+
+
+.conjunto-caixas-regioes{
+    display: flex;
+}
 
 .caixa-regioes{
-    display: inline-block;
+
     width: 340px;
     height: 200px;
     margin: 10px;
@@ -158,11 +205,51 @@ header button{
     text-align: center;
     padding: 30px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#regioes :hover   {
-    background-color: #efeded;
-    cursor: pointer;
+.caixa-regioes:hover {
+  box-shadow: 20px 4px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+#servicos{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+.texto-servicos{
+    text-align: center;
+    padding: 80px;
+}
+
+.texto-servicos h2 {
+    margin-bottom: 20px;
+}
+
+.conjunto-caixas-servicos{
+    display: flex;
+}
+
+.caixa-servicos{
+
+    width: 220px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .texto-historias{
     text-align: justify;
