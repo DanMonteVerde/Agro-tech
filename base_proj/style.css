@@ -223,7 +223,7 @@ header button{
 
 .texto-servicos{
     text-align: center;
-    padding: 80px;
+    padding: 70px;
 }
 
 .texto-servicos h2 {
@@ -280,17 +280,15 @@ header button{
     justify-content: space-evenly;
     align-items: center;
     transition: background-color 0.3s ease,transform 0.3s ease;
-    height: 600px;
+
+    flex-direction: column;
+    padding-bottom: 70px;
 }
 
-.topo-relatos{
-    text-align: center;
-}
 
 
 
-.caixa-relatos{
-    display: inline-block;
+.caixa-relatos {
     width: 300px;
     height: 280px;
     margin: 10px;
@@ -298,11 +296,13 @@ header button{
     border: 1px solid #333;
     box-shadow: 0px 0px 10px #333;
     border-radius: 20px;
-    text-align: center;
     padding: 30px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
 }
-
 .caixa-relatos :hover   {
     background-color: #d6d4d4;
     transform: scale(1.1);
@@ -318,6 +318,13 @@ header button{
     flex-wrap: nowrap;
     align-items: center;
     padding: 60px;
+}
+
+
+.conteiner-relatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #caixa-final button{
