@@ -1,95 +1,121 @@
 .footer {
-  background-color: #2f6b47; /* verde do fundo */
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-family: Arial, sans-serif;
+    background-color: #2f6b47;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .footer-section h2.logo {
-  color: #ffb703;
-  font-size: 1.4em;
-  margin-bottom: 10px;
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 
 .footer-section h3 {
-  color: #ffb703;
-  margin-bottom: 15px;
-  font-size: 1.1em;
+    color: #FFB74D;
+    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 .footer-section p,
 .footer-section li,
 .footer-section a {
-  font-size: 0.9em;
-  color: #e6e6e6;
-  text-decoration: none;
+    font-size: 0.9em;
+    color: #9BC5A4;;
+    text-decoration: none;
 }
 
 .footer-section a:hover {
-  text-decoration: underline;
+    font-weight: bold;
+    color: white;
 }
 
 .footer-section ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+
+.footer-section i:not(.fa-brands) {
+    color: #FFB74D;
+}
+
+.footer-section p{
+    margin-bottom: 8px;
 }
 
 .social-icons span {
-  margin-right: 10px;
+    margin-right: 10px;
+    font-size: 2em;
+    margin-top: 24px;
+}
+
+.social-icons a{
+   color: #9BC5A4;
+}
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons span a:hover{
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
 }
 
 .expansao {
-  background: #1d4b35;
-  color: #d1e7d0;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 0.85em;
-  margin-top: 10px;
+    background: #1d4b35;
+    color: #d1e7d0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85em;
+    margin-top: 10px;
 }
 
 .btn-contato {
-  background-color: #ffb703;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 15px;
+    background-color: #FFB74D;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color:  #3a6a47;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 .btn-contato:hover {
-  background-color: #e69a00;
+    background-color: #ffcc80;
 }
 
 .footer-bottom {
-  border-top: 3px solid #1d4b35;
-  margin-top: 30px;
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 0.8em;
+    border-top: 3px solid #1d4b35;
+    margin-top: 30px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.8em;
 }
 
 .footer-links a {
-  margin-left: 15px;
-  color: #e6e6e6;
-  text-decoration: none;
+    margin-left: 15px;
+    color: #9BC5A4;
+    text-decoration: none;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+    font-weight: bold;
+    color: white;
 }

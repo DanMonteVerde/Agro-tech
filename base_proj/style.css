@@ -42,7 +42,7 @@ header button{
     background-color: #267839;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     /* height: 20px; */
@@ -460,13 +460,13 @@ header button{
 }
 
 .footer-section h2.logo {
-    color: #ffb703;
+    color: white;
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
 .footer-section h3 {
-    color: #ffb703;
+    color: #FFB74D;
     margin-bottom: 15px;
     font-size: 1.1em;
 }
@@ -475,12 +475,13 @@ header button{
 .footer-section li,
 .footer-section a {
     font-size: 0.9em;
-    color: #e6e6e6;
+    color: #9BC5A4;;
     text-decoration: none;
 }
 
 .footer-section a:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    color: white;
 }
 
 .footer-section ul {
@@ -492,8 +493,32 @@ header button{
     margin-bottom: 8px;
 }
 
+
+.footer-section i:not(.fa-brands) {
+    color: #FFB74D;
+}
+
+.footer-section p{
+    margin-bottom: 8px;
+}
+
 .social-icons span {
     margin-right: 10px;
+    font-size: 2em;
+    margin-top: 24px;
+}
+
+.social-icons a{
+   color: #9BC5A4;
+}
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons span a:hover{
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
 }
 
 .expansao {
@@ -506,18 +531,18 @@ header button{
 }
 
 .btn-contato {
-    background-color: #ffb703;
+    background-color: #FFB74D;
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
-    color: #000;
+    color:  #3a6a47;
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
 }
 
 .btn-contato:hover {
-    background-color: #e69a00;
+    background-color: #ffcc80;
 }
 
 .footer-bottom {
@@ -532,10 +557,11 @@ header button{
 
 .footer-links a {
     margin-left: 15px;
-    color: #e6e6e6;
+    color: #9BC5A4;
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    color: white;
 }
