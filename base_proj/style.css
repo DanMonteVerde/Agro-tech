@@ -46,6 +46,11 @@ header button{
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #43a1d4;
 }
 
 .link-header:link, .link-header:visited{
@@ -101,6 +106,11 @@ header button{
     cursor: pointer;
     text-decoration: none;
     margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button-comecar:hover{
+    background-color: #c8cacb;
 }
 
 .link-button-comecar:link, .link-button-comecar:visited{
@@ -113,6 +123,11 @@ header button{
     border: 1px solid white;
     padding: 10px 20px;
     cursor: pointer;
+    transform: background-color 0.3s ease;
+}
+
+.button-saiba-mais:hover{
+    background-color: rgb(56, 107, 122);
 }
 
 .link-button-saiba:link, .link-button-saiba:visited{
@@ -408,6 +423,11 @@ header button{
     cursor: pointer;
     text-decoration: none;
     margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button-comecar-gratis:hover{
+    background-color: #43a1d4;
 }
 
 .link-button-comecar-gratuitamente:link, .link-button-comecar-gratuitamente:visited{
@@ -422,7 +442,17 @@ header button{
     padding: 15px;
     cursor: pointer;
     color: #3a6a47;
+    transition: background-color 0.3s ease;
 }
+
+.button-falar-com-especialista:hover{
+    background-color: #2d6a47;
+}
+
+.button-falar-com-especialista:hover a {
+    color: white;
+}
+
 
 .link-button-falar-com-especialista:link,.link-button-falar-com-especialista:visited{
     text-decoration: none;
@@ -563,4 +593,166 @@ header button{
 .footer-links a:hover {
     font-weight: bold;
     color: white;
+}
+
+@media (max-width: 1200px) {
+    #sobre {
+        padding: 50px;
+    }
+    .sobre-texto {
+        width: 60%;
+    }
+    #titulo-sobre-1 {
+        font-size: 50px;
+    }
+    #titulo-sobre-2 {
+        font-size: 45px;
+    }
+    #sobre img {
+        width: 400px;
+    }
+    .conjunto-caixas-servicos {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 24px;
+    }
+    .sobre-texto {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobre-veja {
+        justify-content: center;
+    }
+    #sobre img {
+        width: 100%;
+        max-width: 450px;
+    }
+    .conjunto-caixas-regioes {
+        justify-content: center;
+    }
+    .conjunto-caixas-servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixa-servicos {
+        width: 80%;
+        max-width: 400px;
+    }
+    #recursos {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+    #recursos div {
+        margin-bottom: 30px;
+    }
+    .caixa-relatos {
+        width: 80%;
+        max-width: 400px;
+    }
+    .conteiner-relatos {
+        justify-content: center;
+    }
+    .texto-caixa-final p {
+        width: 90%;
+    }
+    .botoes-caixa-final {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .button-comecar-gratis,
+    .button-falar-com-especialista {
+        margin: 10px 0;
+        width: 80%;
+        max-width: 300px;
+    }
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+    header button {
+        padding: 8px 15px;
+    }
+    #titulo-sobre-1,
+    #titulo-sobre-2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .texto-regioes,
+    .texto-servicos {
+        padding: 50px 20px;
+        font-size: 1em;
+    }
+    .conjunto-caixas-regioes,
+    .conjunto-caixas-servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixa-regioes {
+        width: 90%;
+        max-width: 400px;
+    }
+    .caixa-servicos {
+        width: 90%;
+        max-width: 400px;
+    }
+    #recursos h3 {
+        font-size: 3em;
+    }
+    #recursos i {
+        font-size: 3em;
+    }
+    #recursos p {
+        font-size: 1.5em;
+    }
+    .conteiner-relatos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixa-relatos {
+        width: 90%;
+        max-width: 400px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-section {
+        align-items: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        margin-top: 10px;
+    }
+    .footer-links a {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 480px) {
+    .botoes-caixa-final {
+        width: 95%;
+    }
+    .button-comecar-gratis,
+    .button-falar-com-especialista {
+        width: 100%;
+        max-width: none;
+    }
 }
