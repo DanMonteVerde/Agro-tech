@@ -404,8 +404,15 @@ header button:hover {
     flex-wrap: nowrap;
     align-items: center;
     padding: 60px;
+    text-align: center;
 }
-
+.botoes-caixa-final {
+    display: flex;
+    gap: 12px;
+    justify-content: center; /* garante que os botões fiquem no centro */
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 #caixa-final button{
 
@@ -749,10 +756,13 @@ header button:hover {
 @media (max-width: 480px) {
     .botoes-caixa-final {
         width: 95%;
+        flex-direction: column;
+        align-items: center;
     }
     .button-comecar-gratis,
     .button-falar-com-especialista {
         width: 100%;
         max-width: none;
+        text-align: center;
     }
 }

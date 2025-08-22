@@ -9,7 +9,7 @@
 body {
     background: #f9fafb;
     color: #111827;
-    padding: 0; 
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,8 +21,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px 30px; 
-    background-color: #ffffff; 
+    padding: 15px 30px;
+    background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     color: #267839;
 }
@@ -39,8 +39,7 @@ header .logo {
 }
 
 .menu {
-    flex-grow: 1; 
-    /* Adicionado: Centraliza o menu horizontalmente */
+    flex-grow: 1;
     display: flex;
     justify-content: center;
 }
@@ -59,7 +58,7 @@ header .logo {
     padding: 8px 12px;
     border-radius: 7px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .menu a:hover,
@@ -123,7 +122,7 @@ section p {
 }
 
 .conteiner-dashboard button:hover {
-    background: #e5e7eb;
+    background: rgb(209, 211, 213);
 }
 
 .conteiner-dashboard button a {
@@ -144,7 +143,7 @@ section p {
     background: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 12px;
-    padding:  20px 70px 16px 16px;
+    padding: 20px 70px 16px 16px;
     display: flex;
     text-align: left;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -173,7 +172,7 @@ section p {
 }
 
 .padrao-2 h3 {
-    margin: 0 0 8px 0; 
+    margin: 0 0 8px 0;
     font-size: 1em;
     overflow-wrap: break-word
 }
@@ -249,16 +248,6 @@ section p {
     font-weight: bold;
 }
 
-
-
-
-@media (max-width: 768px) {
-    .padrão-3 {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .container-4 {
     padding: 20px;
     background-color: #f5f5f5;
@@ -283,7 +272,7 @@ section p {
 
 .padrão-4 i {
     font-size: 1.5em;
-    width: 45px; 
+    width: 45px;
     height: 45px;
     line-height: 45px;
     text-align: center;
@@ -310,17 +299,6 @@ section p {
     color: #888;
 }
 
-@media (max-width: 768px) {
-    .padrão-4 {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .padrão-4 i {
-        margin-bottom: 8px;
-    }
-}
-
-
 .section-5 {
     display: flex;
     gap: 20px;
@@ -341,8 +319,6 @@ section p {
 .padrão-5 i {
     color: #2196F3;
 }
-
-
 
 .padrão-5 h2 {
     font-size: 1.5em;
@@ -457,9 +433,9 @@ section p {
     flex: 1;
 }
 
-.acoes button:nth-of-type(1){ 
-     background-color: white; 
-     border: 1px solid #2D6A47;
+.acoes button:nth-of-type(1){
+    background-color: white;
+    border: 1px solid #2D6A47;
 }
 
 .acoes button:nth-of-type(1) a,
@@ -467,19 +443,37 @@ section p {
     color: #2D6A47;
 }
 
-.acoes button:nth-of-type(2){ 
-     background-color: white; 
-     border: 1px solid #8B5A3F;;
+.acoes button:nth-of-type(1):hover {
+    background-color: #2D6A47;
+}
+
+.acoes button:nth-of-type(1):hover a,
+.acoes button:nth-of-type(1):hover i {
+    color: white;
+}
+
+.acoes button:nth-of-type(2){
+    background-color: white;
+    border: 1px solid #8B5A3F;
 }
 
 .acoes button:nth-of-type(2) a,
 .acoes button:nth-of-type(2) i{
-    color: #8B5A3F;;
+    color: #8B5A3F;
 }
 
-.acoes button:nth-of-type(3){ 
-     background-color: white; 
-     border: 1px solid #2196F3;
+.acoes button:nth-of-type(2):hover {
+    background-color: #8B5A3F;
+}
+
+.acoes button:nth-of-type(2):hover a,
+.acoes button:nth-of-type(2):hover i {
+    color: white;
+}
+
+.acoes button:nth-of-type(3){
+    background-color: white;
+    border: 1px solid #2196F3;
 }
 
 .acoes button:nth-of-type(3) a,
@@ -487,19 +481,282 @@ section p {
     color: #2196F3;
 }
 
+.acoes button:nth-of-type(3):hover {
+    background-color: #2196F3;
+}
+
+.acoes button:nth-of-type(3):hover a,
+.acoes button:nth-of-type(3):hover i {
+    color: white;
+}
+
+
+.menu a.active {
+    border: 2px solid rgb(61, 198, 93); /* verde claro */
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.footer {
+    background-color: #2f6b47;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-section h2.logo {
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    color: #FFB74D;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+    font-size: 0.9em;
+    color: #9BC5A4;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section i:not(.fa-brands) {
+    color: #FFB74D;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+}
+
+.social-icons span {
+    margin-right: 10px;
+    font-size: 2em;
+    margin-top: 24px;
+}
+
+.social-icons a {
+    color: #9BC5A4;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons span a:hover {
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+}
+
+.expansao {
+    background: #1d4b35;
+    color: #d1e7d0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85em;
+    margin-top: 10px;
+}
 
 
 
-.acoes button img {
-    width: 20px;
-    height: 20px;
+
+
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-links a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    header::after {
+        content: '\2261';
+        font-size: 30px;
+        color: #2e7d32;
+        cursor: pointer;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-2 .container-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .padrão-3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .padrão-3 > div {
+        width: 150px;
+    }
+
+    .container-3 h2 {
+        position: static;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+    header button {
+        padding: 6px 12px;
+    }
+    .conteiner-dashboard ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 .container-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .section-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .padrão-3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .padrão-3 > div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .padrão-4 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padrão-4 i {
+        margin-bottom: 8px;
+    }
+
     .section-5 {
         flex-direction: column;
+        gap: 20px;
     }
+
     .padrão-5, .acoes {
         min-width: 100%;
     }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-section {
+        text-align: center;
+        align-items: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer-links a {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.menu a.active {
+    background-color: #9BC5A4; 
+    border-radius: 8px;        
+    padding: 6px 12px;         
+    color: #000;               
 }
