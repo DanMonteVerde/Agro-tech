@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background: #f9fafb;    
+    background: #f9fafb;
     color: #111827;
     padding: 0;
     display: flex;
@@ -34,7 +33,7 @@ header h1 {
 }
 
 header .logo {
-    display: none; 
+    display: none;
 }
 
 .menu {
@@ -137,7 +136,6 @@ header button a {
     width: 100%;
     max-width: 1300px;
     flex-wrap: wrap;
-    
 }
 
 .padrao-terrenos i {
@@ -146,7 +144,6 @@ header button a {
     right: 15px;
     font-size: 24px;
     color: white;
-
     padding: 15px;
     border-radius: 25% 25% 25% 25%;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
@@ -191,7 +188,6 @@ header button a {
 .solo h3 {
     color: #2196F3;
 }
-
 
 
 .menu-terrenos {
@@ -300,41 +296,110 @@ header button a {
 }
 
 @media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
     .topo-terrenos {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-
     .cards-terrenos {
         flex-direction: column;
+        align-items: center;
     }
-
     .padrao-terrenos {
         width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .topo-terrenos h1 {
-        font-size: 22px;
-    }
-
-    .padrao-terrenos h2 {
+    header h1 {
         font-size: 18px;
     }
-
-    .padrao-terrenos p {
-        font-size: 13px;
+    header button {
+        padding: 6px 12px;
     }
-
+    .topo-terrenos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .topo-terrenos button {
+        width: 100%;
+        max-width: 250px;
+    }
+    .cards-terrenos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .padrao-terrenos {
+        width: 100%;
+        min-width: unset;
+        max-width: 350px;
+    }
     .terrenos-container {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+    }
+    .terrenos-container input {
+        width: 90%;
+        max-width: 350px;
+    }
+    .terrenos-container button {
+        width: 90%;
+        max-width: 350px;
+    }
+    .cards-terrenos2 {
+        grid-template-columns: 1fr;
     }
 
-    .terrenos-container button {
-        width: 100%;
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-section {
+        text-align: center;
+        align-items: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer-links a {
+        margin: 0 5px;
     }
 }
 
@@ -342,39 +407,13 @@ header button a {
     body {
         padding: 10px;
     }
-
     .topo-terrenos h1 {
         font-size: 20px;
     }
-
     .cards-terrenos2 {
         grid-template-columns: 1fr;
     }
-
     .padrao-terrenos2 img {
         height: 120px;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .footer-section {
-        align-items: center;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-links {
-        margin-top: 10px;
-    }
-    .footer-links a {
-        margin: 0 8px;
     }
 }

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Agro Tech</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header>
+       <header>
         <h1>Agro Tech</h1>
         <nav class="menu">
             <ul>
@@ -22,7 +24,7 @@
                 <li><a href="contatos.html">Contatos</a></li>
             </ul>
         </nav>
-        <button><a href="perfil.html">Perfil</a></button>
+        <button><a href="perfil.html"><i class="fa-solid fa-user"></i> Perfil</a></button>
     </header>
     <section>
             <h1>Dashboard</h1>
@@ -35,179 +37,193 @@
                 </ul>
         </div>
     </section>
+    
     <section class="section-2">
-        <div class="container-2">
-            <div class="padrao-2">
-            <img src="" alt="marcacao">
+    <div class="container-2">
+        <div class="padrao-2">
+            <i class="fa-solid fa-location-dot card-icon" style="background-color: #377150;"></i>
             <h3>Terrenos cadastrados</h3>
-            <h2>Quantidade de terrenos</h2>
+            <h2>3</h2>
             <p>Propriedades ativas</p>
             <div onclick="window.location.href='terrenos.html'"></div>
-            </div>
+        </div>
 
-            <div class="padrao-2">
-            <img src="" alt="doc-pag">
+        <div class="padrao-2">
+            <i class="fa-solid fa-file-alt card-icon" style="background-color: #2196F3;"></i>
             <h3>Ultimas Recomendações</h3>
             <h2>Quantidade de Recomendações</h2>
             <p>Novas dicas disponíveis</p>
             <div onclick="window.location.href='dicas.html'"></div>
-            </div>
+        </div>
 
-            <div class="padrao-2">
-            <img src="" alt="clima">
+        <div class="padrao-2">
+            <i class="fa-solid fa-cloud-sun card-icon" style="background-color: #8B5A3F;"></i>
             <h3>Clima Atual</h3>
             <h2>Graus Celsius</h2>
             <p>Bom Jesus da Lapa</p>
             <div onclick="window.location.href='terrenos.html'"></div>
-            </div>
+        </div>
 
-            <div class="padrao-2">
-            <img src="" alt="calculadora">
-            <h3>Histórioco de Cálculos</h3>
+        <div class="padrao-2">
+            <i class="fa-solid fa-calculator card-icon" style="background-color: #2D6A47;"></i>
+            <h3>Histórico de Cálculos</h3>
             <h2>Quantidade de Cálculos</h2>
             <p>simulações realizadas</p>
             <div onclick="window.location.href='terrenos.html'"></div>
-            </div>
         </div>
-        </section>
+    </div>
+</section>
+
 
     <section class="section-3">
         <div class="container-3">
             <h2>Estatísticas Rápidas</h2>
             <div class="padrão-3">
                 <div>
-                    <img src="" alt="Sifrão">
-                    <h3>dinheiro</h3>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3>R$ 2.420</h3>
                     <p>Economia Mensal</p>
-                    <h6>+x%</h6>
+                    <h6>+12%</h6>
                 </div>
-                <div><img src="" alt="grafico">
-                    <h3>porcentagem</h3>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>85%</h3>
                     <p>Produtividade</p>
                     <h6>+x%</h6>
                 </div>
                 <div>
-                    <img src="" alt="clima">
-                    <h3>número</h3>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>2</h3>
                     <p>Alertas ativos</p>
                     <h6>+x%</h6>
                 </div>
             </div>
         </div>
+
         <div class="container-4">
             <h2>Atividades Recentes</h2>
             <div class="padrão-4">
-                <img src="" alt="calc">
+               <i class="fa-solid fa-calculator" style="background-color: #2D6A47;"></i>
                 <h3>Novo cálculo de plantio realizado</h3>
                 <p>Milho - Safra 2024/2025</p>
                 <h6>2 horas atrás</h6>
             </div>
             <div class="padrão-4">
-                <img src="" alt="clima">
+                <i class="fa-solid fa-cloud" style="background-color: #2196F3;"></i>
                 <h3>Alerta climático recebido</h3>
                 <p>Possibilidade de chuva nos próximos 3 dias</p>
                 <h6>6 horas atrás</h6>
             </div>
             <div class="padrão-4">
-                <img src="" alt="doc-pag">
+                <i class="fa-solid fa-lightbulb" style="background-color: #8B5A3F;"></i>
                 <h3>Nova recomendação disponível</h3>
                 <p>Manejo integrado de pragas</p>
                 <h6>1 dia atrás</h6>
             </div>
         </div>
     </section>
-    <section class="section-5">
-        <div class="padrão-5">
-            <h2>Clima Atual</h2>
-            <div class="clima">
-                <h1>20°C</h1>
-                <p>Bom Jesus da Lapa</p>
-                <h6>Parcialmente nublado</h6>
-            </div>
-            <div class="seguinte-5">
-                <img src="" alt="termometro">
-                <p>Temperatura</p>
-                <p>28C°</p>
-            </div>
-            <div class="seguinte-5">
-                <img src="" alt="gota">
-                <p>Umidade</p>
-                <p>65%</p>
-            </div>
-            <div class="seguinte-5">
-                <img src="" alt="vento">
-                <p>Vento</p>
-                <p>12km/h</p>
-            </div>
-            <button><a href="clima.html">Ver Previsão Completa</a></button>
+<section class="section-5">
+    <div class="padrão-5">
+        <h2><i class="fa-solid fa-cloud"></i> Clima Atual</h2>
+        <div class="clima">
+            <h1>20°C</h1>
+            <p>Bom Jesus da Lapa</p>
+            <h6>Parcialmente nublado</h6>
         </div>
-        <div class="acoes">
-            <h2>Ações Rápidas</h2>
-            <img src="" alt="doc-pag">
-            <button><a href="dicas.html">Ver Dicas Agrícolas</a></button>
-            <img src="" alt="+">
-            <button><a href="produtos.html">Buscar Produtos</a></button>
-            <img src="" alt="doc-pag">
-            <button><a href="contato.html">Falar com Especialistas</a></button>
+        <div class="seguinte-5">
+            <i class="fa-solid fa-temperature-high"></i>
+            <p>Temperatura</p>
+            <p>28°C</p>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
+        <div class="seguinte-5">
+            <i class="fa-solid fa-droplet"></i>
+            <p>Umidade</p>
+            <p>65%</p>
+        </div>
+        <div class="seguinte-5">
+            <i class="fa-solid fa-wind"></i>
+            <p>Vento</p>
+            <p>12 km/h</p>
+        </div>
+        <button class="btn-clima"><a href="clima.html">Ver Previsão Completa</a></button>
 
-            <div class="footer-section">
-            <h2 class="logo">AgroTech</h2>
-            <p>
-                Apoio técnico e informativo para agricultores familiares, promovendo
-                agricultura sustentável e inovação no campo.
-            </p>
-            <div class="social-icons">
-                <span>[fb]</span>
-                <span>[ig]</span>
-                <span>[tw]</span>
-            </div>
-            </div>
+    </div>
 
-            <div class="footer-section">
-            <h3>Links Rápidos</h3>
-            <ul>
-                <li><a href="#">Clima Tempo Real</a></li>
-                <li><a href="#">Calculadora de Custos</a></li>
-                <li><a href="#">Recomendações Técnicas</a></li>
-                <li><a href="#">Dicas Agrícolas</a></li>
-                <li><a href="#">Catálogo de Produtos</a></li>
-            </ul>
-            </div>
+    <div class="acoes">
+        <h2>Ações Rápidas</h2>
+        <button>
+            <i class="fa-solid fa-file-alt"></i>
+            <a href="dicas.html">Ver Dicas Agrícolas</a>
+        </button>
+        <button>
+            <i class="fa-solid fa-box"></i>
+            <a href="produtos.html">Buscar Produtos</a>
+        </button>
+        <button>
+            <i class="fa-solid fa-comments"></i>
+            <a href="contato.html">Falar com Especialistas</a>
+        </button>
+    </div>
+</section>
 
-            <div class="footer-section">
-            <h3>Regiões Atendidas</h3>
-            <ul>
-                <li><span>[map]</span> Serra do Ramalho - BA</li>
-                <li><span>[map]</span> Bom Jesus da Lapa - BA</li>
-                <li><span>[map]</span> Riacho de Santana - BA</li>
-            </ul>
-            <div class="expansao">
-                Expandindo nosso atendimento para toda região oeste da Bahia
-            </div>
-            </div>
+<footer class="footer">
+    <div class="footer-container">
 
-            <div class="footer-section">
-            <h3>Contato</h3>
-            <p><span>[fone]</span> (77) 3481-2000</p>
-            <p><span>[email]</span> contato@agrotech.com.br</p>
-            <p><span>[clock]</span> Segunda à Sexta<br>7:00 - 17:00</p>
-            <button class="btn-contato">Entre em Contato</button>
-            </div>
+    <div class="footer-section">
+        <h2 class="logo"><i class="fa-solid fa-seedling" style="color: #FFB74D;"></i>AgroTech</h2>
+        <p>
+            Apoio técnico e informativo para agricultores familiares, promovendo
+            agricultura sustentável e inovação no campo.
+        </p>
+        
+        <div class="social-icons">
+            <span><a href=""><i class="fa-brands fa-facebook-f"></i></a></span>
+            <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+            <span><a href=""><i class="fa-brands fa-whatsapp"></i></a></span>
+        </div>
+     </div>
 
+        <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+            <li><a href="#">Clima Tempo Real</a></li>
+            <li><a href="#">Calculadora de Custos</a></li>
+            <li><a href="#">Recomendações Técnicas</a></li>
+            <li><a href="#">Dicas Agrícolas</a></li>
+            <li><a href="#">Catálogo de Produtos</a></li>
+        </ul>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2024 AgroTech. Todos os direitos reservados.</p>
-            <div class="footer-links">
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Cookies</a>
-            </div>
+        <div class="footer-section">
+        <h3>Regiões Atendidas</h3>
+        <ul>
+            <li><span><i class="fa-solid fa-location-arrow"></i></span> Serra do Ramalho - BA</li>
+            <li><span><i class="fa-solid fa-location-arrow"></i></span> Bom Jesus da Lapa - BA</li>
+            <li><span><i class="fa-solid fa-location-arrow"></i></span> Riacho de Santana - BA</li>
+        </ul>
+        <div class="expansao">
+            Expandindo nosso atendimento para toda região oeste da Bahia
         </div>
-    </footer>
+        </div>
+
+        <div class="footer-section">
+        <h3>Contato</h3>
+        <p><span><i class="fa-solid fa-phone"></i></span> (77) 3481-2000</p>
+        <p><span><i class="fa-solid fa-envelope"></i></span> agrotech@gmail.com</p>
+        <p><span><i class="fa-solid fa-clock"></i></span> Segunda à Sexta<br>7:00 - 17:00</p>
+        <button class="btn-contato">Entre em Contato</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 AgroTech. Todos os direitos reservados.</p>
+        <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Cookies</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
