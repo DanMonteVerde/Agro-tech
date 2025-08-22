@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Tech</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -12,7 +14,7 @@
             <img src="../imagens/IMG_2629.PNG" alt="">
             <h1>Agro Tech</h1>
         </div>
-        <button onclick="window.location.href='login.html'"><a href="" class="link-header">Entrar</a></button>
+        <button onclick="window.location.href='login.html'"><a href="login.html" class="link-header">Entrar</a></button>
     </header>
 
     <main>
@@ -23,7 +25,7 @@
                 <h1 id="titulo-sobre-2">Agricultura Familiar</h1>
                 <p>Apoio técnico e informativo para agricultores das regiões de Serra do Ramalho, Bom Jesus da Lapa e Riacho de Santana na Bahia.</p>    
                 <div class="botoes-sobre">
-                    <button class="button-comecar"><a href="dashboard.html" class="link-button-comecar">Começar agora</a></button>
+                    <button class="button-comecar"><a href="dashboard.html" class="link-button-comecar">Começar agora <i class="fa-solid fa-arrow-right"></i></a></button>
                     <button class="button-saiba-mais"><a href="" class="link-button-saiba">Saiba Mais</a></button>
                 </div>
             </div>
@@ -40,50 +42,63 @@
             </div>
 
             <div class="conjunto-caixas-regioes">
+                
                 <div class="caixa-regioes">
-                    <img src="" alt="img de um localizador">
+                    <i class="fa-solid fa-location-dot"></i><br>
                     <h3>Serra do Ramalho</h3>
                 </div>
+
                 <div class="caixa-regioes">
-                    <img src="" alt="img de um localizador">
+                    <i class="fa-solid fa-location-dot"></i><br>
                     <h3>Bom Jesus da Lapa</h3>
                 </div>
+
                 <div class="caixa-regioes">
-                    <img src="" alt="img de um localizador">
+                    <i class="fa-solid fa-location-dot"></i><br>
                     <h3>Riacho de Santana</h3>
                 </div>
             </div>
         </section>
 
         <section id="servicos">
-
-            <div class="texto-servicos">
-                <h2>Nossos Serviços</h2>
-                <p>Ferramentas desenvolvidas para o agricultor familiar</p>
-            </div>
+                <div class="texto-servicos">
+                    <h2>Nossos Serviços</h2>
+                    <p>Ferramentas desenvolvidas para o agricultor familiar</p>
+                </div>
 
             <div class="conjunto-caixas-servicos">
+                
                 <div class="caixa-servicos">
-                    <img src="" alt="img de um localizador">
-                    <h3>Clima em tempo real</h3>
+                    <div class="icone-circulo" style="background-color: #A8D8FF;">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3>Clima em tempo real</h3><br>
                     <p>Informações meteorológicas atualizadas para suas regiões</p>
                 </div>
 
                 <div class="caixa-servicos">
-                    <img src="" alt="img de um localizador">
-                    <h3>Cálculo de custos</h3>
+                    <div class="icone-circulo" style="background-color: 
+                    #9BC5A4;">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3>Cálculo de custos</h3><br>
                     <p>Simule custos de plantio e investimentos necessários</p>
                 </div>
 
                 <div class="caixa-servicos">
-                    <img src="" alt="img de um localizador">
-                    <h3>Boas práticas agrícolas</h3>
+                    <div class="icone-circulo" style="background-color: #A8D8FF;">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Boas práticas agrícolas</h3><br>
                     <p>Dicas e recomendações para melhorar sua produção</p>
                 </div>
 
                 <div class="caixa-servicos">
-                    <img src="" alt="img de um localizador">
-                    <h3>Contato com especialistas</h3>
+                    <div class="icone-circulo" style="background-color: 
+                    #9BC5A4;">
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </div>
+                    <h3>Contato com especialistas</h3><br>
                     <p>Suporte técnico especializado para suas dúvidas</p>
                 </div>
             </div>
@@ -92,18 +107,18 @@
         <section id="recursos">
 
             <div class="temperatura">
-                <img src="" alt="img-temperatura">
-                <h3>porcentagem</h3>
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <h3>98%</h3>
                 <p>Precisão climática</p>
             </div>
             <div class="sifrao">
-                <img src="" alt="img-sifrao">
-                <h3>porcentagem</h3>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h3>30%</h3>
                 <p>Reução de custos</p>
             </div>
             <div class="plantio">
-                <img src="" alt="img-planta">
-                <h3>Quantidade</h3>
+                <i class="fa-solid fa-seedling"></i>
+                <h3>500+</h3>
                 <p>Agriultores atendidos</p>
             </div>
         </section>
@@ -115,25 +130,43 @@
                 </div>
             <div class="conteiner-relatos">
                 <div class="caixa-relatos">
-                    <img src="" alt="estrelas">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aperiam at corrupti eaque, beatae odio qui ad omnis, amet eos est? Ullam at autem quidem blanditiis. Eius quae vero neque.</p>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"O AgroTech me ajudou a planejar melhor minha safra. As informações do clima são muito precisas!"</p>
                     <hr>
-                    <h3>nome</h3>
-                    <h4>Lugar onde mora</h4>
+                    <h3>João Silva</h3>
+                    <p>Serra do Ramalho - BA</p>
                 </div>
                 <div class="caixa-relatos">
-                    <img src="" alt="estrelas">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aperiam at corrupti eaque, beatae odio qui ad omnis, amet eos est? Ullam at autem quidem blanditiis. Eius quae vero neque.</p>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"A calculadora de custos foi fundamental para organizar meu orçamento. Recomendo!"</p>
                     <hr>
-                    <h3>nome</h3>
-                    <h4>Lugar onde mora</h4>
+                    <h3>Maria Santos</h3>
+                    <p>Bom Jesus da Lapa - BA</p>
                 </div>
                 <div class="caixa-relatos">
-                    <img src="" alt="estrelas">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aperiam at corrupti eaque, beatae odio qui ad omnis, amet eos est? Ullam at autem quidem blanditiis. Eius quae vero neque.</p>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"A calculadora de custos foi fundamental para organizar meu orçamento. Recomendo!"</p>
                     <hr>
-                    <h3>nome</h3>
-                    <h4>Lugar onde mora</h4>
+                    <h3>Pedro Oliveira</h3>
+                    <p>Riacho de Santana - BA</p>
                 </div>
             </div>
         </section>
@@ -146,7 +179,7 @@
             </div>
 
             <div class="botoes-caixa-final">
-                <button class="button-comecar-gratis"><a href="dashboard.html" class="link-button-comecar-gratuitamente">Começar Gratuitamente</a></button>
+                <button class="button-comecar-gratis"><a href="dashboard.html" class="link-button-comecar-gratuitamente">Começar Gratuitamente <i class="fa-solid fa-arrow-right"></i></a></button>
                 <button class="button-falar-com-especialista"><a href="" class="link-button-falar-com-especialista">Falar com especialista</a></button>
             </div>
         </section>
