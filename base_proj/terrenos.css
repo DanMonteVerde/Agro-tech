@@ -23,6 +23,10 @@ header {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     color: #267839;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
 }
 
 header h1 {
@@ -94,6 +98,7 @@ header button a {
     margin-bottom: 25px;
     flex-wrap: wrap;
     gap: 15px;
+    margin-top: 80px;
 }
 
 .topo-terrenos h1 {

@@ -25,6 +25,10 @@ header {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     color: #267839;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
 }
 
 header h1 {
@@ -93,6 +97,7 @@ section {
     width: 100%;
     max-width: 1200px;
     padding: 20px;
+    margin-top: 60px;
 }
 
 h1 {
