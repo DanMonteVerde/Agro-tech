@@ -12,14 +12,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
-from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-change-me")
-DEBUG = os.getenv("DEBUG", "1") == "1"
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,7 +27,7 @@ SECRET_KEY = 'django-insecure-!rjq^5$4sv1#nb)w-odwnjifb(^u^!py@vx9uqu#27(u0810j0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,19 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'main.apps.MainConfig',
-    'accounts.apps.AccountsConfig',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'corsheaders',
-    'rest_framework',
-    'rest_framework.authtoken', # útil se usar TokenAuth; opcional com JWT
-    'rest_framework_simplejwt.token_blacklist', # opcional (logout com blacklist)
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount', # opcional
-    'dj_rest_auth',
-    'dj_rest_auth.registration',
+    'login.apps.LoginConfig',
 ]
 SITE_ID = 1 
 MIDDLEWARE = [
@@ -67,10 +51,6 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    'allauth.account.middleware.AccountMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -146,51 +126,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
 
-SITE_ID = 1
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # login por usuário ou e-mail
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-    'rest_framework_simplejwt.authentication.JWTAuthentication', # para front-end SPA/mobile
-    'rest_framework.authentication.SessionAuthentication', # útil no Browsable API
-    ),
-    'DEFAULT_PERMISSION_CLASSES': (
-    'rest_framework.permissions.IsAuthenticated', # padrão seguro
-    ),
-}
-
-REST_USE_JWT = True
-DJRESTAUTH_TOKEN_MODEL = None
-
-
-SIMPLE_JWT = {
-'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
-'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
-'ROTATE_REFRESH_TOKENS': True,
-'BLACKLIST_AFTER_ROTATION': True,
-'AUTH_HEADER_TYPES': ('Bearer',),
-}
-
-
-# --------- E-mail (reset de senha em DEV) ---------
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-
-# --------- CORS (front-end separado) ---------
-CORS_ALLOWED_ORIGINS = os.getenv(
-    'CORS_ALLOWED_ORIGINS',
-    'http://localhost:3000,http://127.0.0.1:3000'
-).split(',')
 
 #VERIFICAÇÃO DO EMAIL, CONVERSAR DEPOIS
 #ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGOUT_REDIRECT_URL = '/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = "login"              
+LOGIN_REDIRECT_URL = "index"      
+LOGOUT_REDIRECT_URL = "login"    
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-''
