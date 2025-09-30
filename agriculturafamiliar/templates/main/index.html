@@ -1,21 +1,250 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Agro Tech</title>
     <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-    <h1>OK</h1>
-    {% if not user.is_authenticated %}
-    <a href="{% url 'login' %}">login</a>
-    {% else %}
-    <form method="post" action="{% url 'logout' %}">
-        {% csrf_token %}
-        <button type="submit">Sair</button>
-    </form>
-    {% endif %}
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/IMG_2629.PNG' %}" alt="">
+            <h1>Agro Tech</h1>
+        </div>
+        <button onclick="window.location.href='login.html'"><a href="{% url 'login' %}" class="link-header">Entrar</a></button>
+    </header>
+
+    <main>
+
+        <section id="sobre">
+            <div class="sobre-texto">
+                <h1 id="titulo-sobre-1">Tecnologia para</h1>
+                <h1 id="titulo-sobre-2">Agricultura Familiar</h1>
+                <p>Apoio técnico e informativo para agricultores das regiões de Serra do Ramalho, Bom Jesus da Lapa e Riacho de Santana na Bahia.</p>    
+                <div class="botoes-sobre">
+                    <button class="button-comecar"><a href="{% url 'dashboard' %}" class="link-button-comecar">Começar agora <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="button-saiba-mais"><a href="" class="link-button-saiba">Saiba Mais</a></button>
+                </div>
+            </div>
+            <div class="img-sobre">
+                <img src="{% static 'img/Imagem de trator tela inicial.jpg' %}" alt="">
+            </div>
+        </section>
+
+        <section id="regioes">
+
+            <div class="texto-regioes">
+                <h2>Regiões Atendidas</h2>
+                <p>Atuamos nas principais regiões agrícolas da Bahia</p>
+            </div>
+
+            <div class="conjunto-caixas-regioes">
+                
+                <div class="caixa-regioes">
+                    <i class="fa-solid fa-location-dot"></i><br>
+                    <h3>Serra do Ramalho</h3>
+                </div>
+
+                <div class="caixa-regioes">
+                    <i class="fa-solid fa-location-dot"></i><br>
+                    <h3>Bom Jesus da Lapa</h3>
+                </div>
+
+                <div class="caixa-regioes">
+                    <i class="fa-solid fa-location-dot"></i><br>
+                    <h3>Riacho de Santana</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+                <div class="texto-servicos">
+                    <h2>Nossos Serviços</h2>
+                    <p>Ferramentas desenvolvidas para o agricultor familiar</p>
+                </div>
+
+            <div class="conjunto-caixas-servicos">
+
+                <div class="caixa-servicos">
+                    <div class="icone-circulo" style="background-color: #A8D8FF;">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3>Clima em tempo real</h3><br>
+                    <p>Informações meteorológicas atualizadas para suas regiões</p>
+                </div>
+
+                <div class="caixa-servicos">
+                    <div class="icone-circulo" style="background-color: 
+                    #9BC5A4;">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3>Cálculo de custos</h3><br>
+                    <p>Simule custos de plantio e investimentos necessários</p>
+                </div>
+
+                <div class="caixa-servicos">
+                    <div class="icone-circulo" style="background-color: #A8D8FF;">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Boas práticas agrícolas</h3><br>
+                    <p>Dicas e recomendações para melhorar sua produção</p>
+                </div>
+
+                <div class="caixa-servicos">
+                    <div class="icone-circulo" style="background-color: 
+                    #9BC5A4;">
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </div>
+                    <h3>Contato com especialistas</h3><br>
+                    <p>Suporte técnico especializado para suas dúvidas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos">
+
+            <div class="temperatura">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <h3>98%</h3>
+                <p>Precisão climática</p>
+            </div>
+            <div class="sifrao">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h3>30%</h3>
+                <p>Redução de custos</p>
+            </div>
+            <div class="plantio">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>500+</h3>
+                <p>Agriultores atendidos</p>
+            </div>
+        </section>
+
+        <section id="relatos">
+                <div class="texto-servicos">
+                    <h2>O que dizem nossos agricultores</h2>
+                    <p>Depoimentos de quem já usa o AgroTech</p>
+                </div>
+            <div class="conteiner-relatos">
+                <div class="caixa-relatos">
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"O AgroTech me ajudou a planejar melhor minha safra. As informações do clima são muito precisas!"</p>
+                    <hr>
+                    <h3>João Silva</h3>
+                    <p>Serra do Ramalho - BA</p>
+                </div>
+                <div class="caixa-relatos">
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"A calculadora de custos foi fundamental para organizar meu orçamento. Recomendo!"</p>
+                    <hr>
+                    <h3>Maria Santos</h3>
+                    <p>Bom Jesus da Lapa - BA</p>
+                </div>
+                <div class="caixa-relatos">
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"A calculadora de custos foi fundamental para organizar meu orçamento. Recomendo!"</p>
+                    <hr>
+                    <h3>Pedro Oliveira</h3>
+                    <p>Riacho de Santana - BA</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="caixa-final">
+            <div class="texto-caixa-final">
+                <h2>Pronto para revolucionar sua agricultura?</h2>
+                <p>Junte-se a centenas de agricultores que já estão usando o AgroTech para melhorar sua produtividade e reduzir custos.</p>
+            </div>
+
+            <div class="botoes-caixa-final">
+                <button class="button-comecar-gratis"><a href="{% url 'dashboard' %}" class="link-button-comecar-gratuitamente">Começar Gratuitamente <i class="fa-solid fa-arrow-right"></i></a></button>
+                <button class="button-falar-com-especialista"><a href="" class="link-button-falar-com-especialista">Falar com especialista</a></button>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+    <div class="footer-section">
+        <h2 class="logo"><i class="fa-solid fa-seedling" style="color: #FFB74D;"></i>AgroTech</h2>
+        <p>
+            Apoio técnico e informativo para agricultores familiares, promovendo
+            agricultura sustentável e inovação no campo.
+        </p>
+        
+        <div class="social-icons">
+            <span><a href=""><i class="fa-brands fa-facebook-f"></i></a></span>
+            <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+            <span><a href=""><i class="fa-brands fa-whatsapp"></i></a></span>
+        </div>
+    </div>
+
+        <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+            <li><a href="#">Clima Tempo Real</a></li>
+            <li><a href="#">Calculadora de Custos</a></li>
+            <li><a href="#">Recomendações Técnicas</a></li>
+            <li><a href="#">Dicas Agrícolas</a></li>
+            <li><a href="#">Catálogo de Produtos</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-section">
+        <h3>Regiões Atendidas</h3>
+        <ul>
+            <li><span><i class="fa-solid fa-location-arrow"></i></span> Serra do Ramalho - BA</li>
+            <li><span><i class="fa-solid fa-location-arrow"></i></span> Bom Jesus da Lapa - BA</li>
+            <li><span><i class="fa-solid fa-location-arrow"></i></span> Riacho de Santana - BA</li>
+        </ul>
+        <div class="expansao">
+            Expandindo nosso atendimento para toda região oeste da Bahia
+        </div>
+        </div>
+
+        <div class="footer-section">
+        <h3>Contato</h3>
+        <p><span><i class="fa-solid fa-phone"></i></span> (77) 3481-2000</p>
+        <p><span><i class="fa-solid fa-envelope"></i></span> agrotech@gmail.com</p>
+        <p><span><i class="fa-solid fa-clock"></i></span> Segunda à Sexta<br>7:00 - 17:00</p>
+        <button class="btn-contato">Entre em Contato</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 AgroTech. Todos os direitos reservados.</p>
+        <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Cookies</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

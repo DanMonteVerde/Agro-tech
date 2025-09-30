@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Agro Tech</title>
+    <link rel="stylesheet" href="{% static 'css/conteudo/dashboard.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/conteudo/footer.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'base/nav.html' %}
+    </header>
+    <section>
+            <h1>Dashboard</h1>
+            <p>Bem-vindo de volta! Aqui está um resumo da sua atividade.</p>
+        <div class="conteiner-dashboard">   
+                <ul>
+                    <li><button class="btn-terreno"><a href="#"><i class="fa-solid fa-plus"></i> Adicionar Terreno</a></button></li>
+                    <li><button class="btn-calculadora"><a href="#"><i class="fa-solid fa-calculator"></i> Nova simulação</a></button></li>
+                    <li><button class="btn-perfil"><a href="#"><i class="fa-solid fa-user"></i> Meu perfil</a></button></li>   
+                </ul>
+        </div>
+    </section>
+    
+    <section class="section-2">
+    <div class="container-2">
+        <div class="padrao-2">
+            <i class="fa-solid fa-location-dot card-icon" style="background-color: #377150;"></i>
+            <h3>Terrenos cadastrados</h3>
+            <h2>3</h2>
+            <p>Propriedades ativas</p>
+            <div onclick="window.location.href='#'"></div>
+        </div>
+
+        <div class="padrao-2">
+            <i class="fa-solid fa-file-alt card-icon" style="background-color: #2196F3;"></i>
+            <h3>Ultimas Recomendações</h3>
+            <h2>Quantidade de Recomendações</h2>
+            <p>Novas dicas disponíveis</p>
+            <div onclick="window.location.href='#'"></div>
+        </div>
+
+        <div class="padrao-2">
+            <i class="fa-solid fa-cloud-sun card-icon" style="background-color: #8B5A3F;"></i>
+            <h3>Clima Atual</h3>
+            <h2>Graus Celsius</h2>
+            <p>Bom Jesus da Lapa</p>
+            <div onclick="window.location.href='#'"></div>
+        </div>
+
+        <div class="padrao-2">
+            <i class="fa-solid fa-calculator card-icon" style="background-color: #2D6A47;"></i>
+            <h3>Histórico de Cálculos</h3>
+            <h2>Quantidade de Cálculos</h2>
+            <p>simulações realizadas</p>
+            <div onclick="window.location.href='#'"></div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="section-3">
+        <div class="container-3">
+            <h2>Estatísticas Rápidas</h2>
+            <div class="padrão-3">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3>R$ 2.420</h3>
+                    <p>Economia Mensal</p>
+                    <h6>+12%</h6>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>85%</h3>
+                    <p>Produtividade</p>
+                    <h6>+x%</h6>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>2</h3>
+                    <p>Alertas ativos</p>
+                    <h6>+x%</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-4">
+            <h2>Atividades Recentes</h2>
+            <div class="padrão-4">
+                <i class="fa-solid fa-calculator" style="background-color: #2D6A47;"></i>
+                <h3>Novo cálculo de plantio realizado</h3>
+                <p>Milho - Safra 2024/2025</p>
+                <h6>2 horas atrás</h6>
+            </div>
+            <div class="padrão-4">
+                <i class="fa-solid fa-cloud" style="background-color: #2196F3;"></i>
+                <h3>Alerta climático recebido</h3>
+                <p>Possibilidade de chuva nos próximos 3 dias</p>
+                <h6>6 horas atrás</h6>
+            </div>
+            <div class="padrão-4">
+                <i class="fa-solid fa-lightbulb" style="background-color: #8B5A3F;"></i>
+                <h3>Nova recomendação disponível</h3>
+                <p>Manejo integrado de pragas</p>
+                <h6>1 dia atrás</h6>
+            </div>
+        </div>
+    </section>
+<section class="section-5">
+    <div class="padrão-5">
+        <h2><i class="fa-solid fa-cloud"></i> Clima Atual</h2>
+        <div class="clima">
+            <h1>20°C</h1>
+            <p>Bom Jesus da Lapa</p>
+            <h6>Parcialmente nublado</h6>
+        </div>
+        <div class="seguinte-5">
+            <i class="fa-solid fa-temperature-high"></i>
+            <p>Temperatura</p>
+            <p>28°C</p>
+        </div>
+        <div class="seguinte-5">
+            <i class="fa-solid fa-droplet"></i>
+            <p>Umidade</p>
+            <p>65%</p>
+        </div>
+        <div class="seguinte-5">
+            <i class="fa-solid fa-wind"></i>
+            <p>Vento</p>
+            <p>12 km/h</p>
+        </div>
+        <button class="btn-clima"><a href="#">Ver Previsão Completa</a></button>
+
+    </div>
+
+    <div class="acoes">
+        <h2>Ações Rápidas</h2>
+        <button>
+            <i class="fa-solid fa-file-alt"></i>
+            <a href="#">Ver Dicas Agrícolas</a>
+        </button>
+        <button>
+            <i class="fa-solid fa-box"></i>
+            <a href="#">Buscar Produtos</a>
+        </button>
+        <button>
+            <i class="fa-solid fa-comments"></i>
+            <a href="#">Falar com Especialistas</a>
+        </button>
+    </div>
+</section>
+{% include 'base/footer.html' %}
+</body>
+</html>

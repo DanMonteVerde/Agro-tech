@@ -33,7 +33,9 @@ class CustomUserCreationForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ["username", "email"]  # username vai ser o nome completo
-
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['username'].help_text = None
     def clean(self):
         cleaned_data = super().clean()
         p1 = cleaned_data.get("password1")

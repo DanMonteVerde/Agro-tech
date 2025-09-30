@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f9fafb;
+    color: #111827;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    color: #267839;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-right: 20px;
+}
+
+header .logo {
+    display: none;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 14px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #f0f0f0;
+    color: #2e7d32;
+}
+
+header button {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+header button:hover {
+    background-color: #f3f4f6;
+}
+
+header button a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.topo-terrenos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 80px;
+}
+
+.topo-terrenos h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #1a2e28;
+}
+
+.topo-terrenos p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.topo-terrenos button {
+    background-color: #1e5b3c;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topo-terrenos button:hover {
+    background-color: #14452c;
+}
+
+.topo-terrenos button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cards-terrenos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1300px;
+    flex-wrap: wrap;
+}
+
+.padrao-terrenos i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: white;
+    padding: 15px;
+    border-radius: 25% 25% 25% 25%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+
+.padrao-terrenos {
+    background: white;
+    flex: 1;
+    min-width: 280px;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s;
+    position: relative;
+}
+
+.padrao-terrenos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+}
+
+.padrao-terrenos p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.padrao-terrenos h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d4a3d;
+}
+
+.area i,
+.area h3 {
+    color: #407858;
+}
+
+.solo i,
+.solo h3 {
+    color: #2196F3;
+}
+
+
+.menu-terrenos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.terrenos-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.terrenos-container input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+}
+
+.terrenos-container input[type="text"]:focus {
+    border-color: #2d7a50;
+    box-shadow: 0 0 6px rgba(45, 122, 80, 0.3);
+}
+
+.terrenos-container button {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #f3f6f5;
+    color: #2d4a3d;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.terrenos-container button:hover {
+    background: #2d7a50;
+    color: white;
+}
+
+.cards-terrenos2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.padrao-terrenos2 {
+    background: white;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.padrao-terrenos2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+}
+
+.padrao-terrenos2 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.padrao-terrenos2 h3 {
+    margin: 8px 12px 4px 12px;
+    font-size: 16px;
+}
+
+.padrao-terrenos2 p {
+    margin: 2px 12px;
+    font-size: 13px;
+    color: #666;
+}
+
+.padrao-terrenos2 div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 5px 12px;
+}
+
+.padrao-terrenos2 h4 {
+    margin: 0;
+    font-size: 12px;
+    color: #444;
+}
+
+.padrao-terrenos2 h3:last-child {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .topo-terrenos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .cards-terrenos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .padrao-terrenos {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+    header button {
+        padding: 6px 12px;
+    }
+    .topo-terrenos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .topo-terrenos button {
+        width: 100%;
+        max-width: 250px;
+    }
+    .cards-terrenos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .padrao-terrenos {
+        width: 100%;
+        min-width: unset;
+        max-width: 350px;
+    }
+    .terrenos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .terrenos-container input {
+        width: 90%;
+        max-width: 350px;
+    }
+    .terrenos-container button {
+        width: 90%;
+        max-width: 350px;
+    }
+    .cards-terrenos2 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-section {
+        text-align: center;
+        align-items: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer-links a {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .topo-terrenos h1 {
+        font-size: 20px;
+    }
+    .cards-terrenos2 {
+        grid-template-columns: 1fr;
+    }
+    .padrao-terrenos2 img {
+        height: 120px;
+    }
+}
+
+.menu a.active {
+    background-color: #9BC5A4; 
+    border-radius: 8px;        
+    padding: 6px 12px;         
+    color: #000;            
+}

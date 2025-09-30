@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'main.apps.MainConfig',
     'login.apps.LoginConfig',
+    'conteudo.apps.ConteudoConfig',
 ]
 SITE_ID = 1 
 MIDDLEWARE = [
@@ -129,11 +130,20 @@ MEDIA_URL = "/media/"
 
 #VERIFICAÇÃO DO EMAIL, CONVERSAR DEPOIS
 #ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGIN_URL = "login"              
-LOGIN_REDIRECT_URL = "index"      
-LOGOUT_REDIRECT_URL = "login"    
+LOGIN_URL = "/login/"              
+LOGIN_REDIRECT_URL = "/dashboard/"      
+LOGOUT_REDIRECT_URL = "/login/"    
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# tempo que a sessão dura
+SESSION_COOKIE_AGE = 60 * 60 * 24  # 1 dia (em segundos)
+
+# se True, a sessão expira quando o navegador é fechado
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+# cookies só acessíveis pelo HTTP (mais seguro)
+SESSION_COOKIE_HTTPONLY = True
